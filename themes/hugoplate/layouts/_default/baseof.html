@@ -10,13 +10,22 @@
     <!-- head (don't cache it) -->
     {{ partial "essentials/head.html" . }}
 
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+    <!-- KaTeX JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true}, // Block math
+        {left: '$', right: '$', display: false}   // Inline math
+      ]
+    });"></script>
 
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
-
   </head>
 
-  <body>
+  <body class="bg-gradient-to-b from-gray-100 via-amber-50 to-gray-200 min-h-screen">
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}
@@ -24,28 +33,23 @@
     {{ else }}
       {{ partial "preloader.html" . }}
 
-
       <!-- tailwind size indicator -->
       {{ partial "components/tw-size-indicator.html" . }}
     {{ end }}
 
-
     <!-- announcement -->
     {{ partialCached "announcement.html" . }}
-
 
     <!-- header (don't cache it) -->
     {{ partial "essentials/header.html" . }}
     {{ partial "search-modal.html" (dict "Context" . ) }}
-
 
     <main>
       {{ block "main" . }}{{ end }}
     </main>
 
     <!-- footer -->
-    {{ partial "essentials/footer.html" . }}
-
+    <!-- {{ partial "essentials/footer.html" . }} -->
 
     <!-- script (always cache it) -->
     {{ partialCached "essentials/script.html" . }}

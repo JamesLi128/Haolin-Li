@@ -1,6 +1,56 @@
 {{ define "main" }}
+
+  {{ with .Params.introduction }}
+  <section class="section">
+    <div class="container">
+      <div class="row items-center">
+        <!-- Image and Title Section -->
+        <div class="md:col-4 mb-6 text-center">
+          {{ partial "image" (dict "Src" .image "Alt" "Introduction image" "Class" "mx-auto lg:!max-w-[300px] rounded-full") }}
+          <h2 class="mt-4">
+            {{ .title | markdownify }}
+          </h2>
+          <p class="mt-3">
+            <a href="mailto:{{ .email }}" class="text-primary">
+              {{ .email }}
+            </a>
+          </p>
+          <p class="mt-3">
+            {{ .affiliation }}
+          </p>
+          
+          <ul class="social-icons pt-4">
+            {{ range site.Data.social.main }}
+              <li>
+                <a
+                  target="_blank"
+                  aria-label="{{ .name }}"
+                  rel="nofollow noopener"
+                  href="{{ .link | safeURL }}">
+                  <i class="{{ .icon }}"></i>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <!-- Content Section -->
+        <div class="md:col-8">
+          <p class="text-lg font-sans indent-8">
+            {{ .content | markdownify }}
+          </p>
+          <p class="text-lg font-sans indent-8">
+            {{ .interest | markdownify }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+
+
   <!-- Banner -->
-  {{ with .Params.banner }}
+  <!-- {{ with .Params.banner }}
     <section class="section pt-14">
       <div class="container">
         <div class="row justify-center">
@@ -31,12 +81,12 @@
         </div>
       </div>
     </section>
-  {{ end }}
+  {{ end }} -->
   <!-- /Banner -->
 
   <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
+  <!-- {{ range $i, $e:= .Params.features }}
+    <section class="section-sm bg-gradient">
       <div class="container">
         <div class="row items-center justify-between">
           <div
@@ -75,11 +125,11 @@
         </div>
       </div>
     </section>
-  {{ end }}
+  {{ end }} -->
   <!-- /Features -->
 
   <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial" }}
+  <!-- {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
       <section class="section">
         <div class="container">
@@ -139,6 +189,6 @@
         </div>
       </section>
     {{ end }}
-  {{ end }}
+  {{ end }} -->
   <!-- /Testimonials -->
 {{ end }}
