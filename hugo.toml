@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://jamesli128.github.io/Haolin-Li/"
 # Title of your website (required).
 title = "Haolin-Li"
 # Your theme name
