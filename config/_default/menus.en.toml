@@ -11,6 +11,7 @@ name = "About"
 url = "/about"
 weight = 2
 
+
 [[main]]
 name = "Elements"
 url = "/elements"
@@ -19,6 +20,11 @@ weight = 3
 [[main]]
 weight = 4
 name = "Pages"
+
+[[main]]
+name = "Cat Pics"
+url = "/cat-pics"
+weight = 5
 
 [[main]]
 parent = "Pages"
