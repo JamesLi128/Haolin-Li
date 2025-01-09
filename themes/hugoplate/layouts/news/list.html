@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+    {{ if .Params.news }}
+    <ul class="space-y-2">
+        {{ range .Params.news }}
+        <li class="flex flex-col bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+            <span class="text-lg font-medium text-gray-800">{{ .title }}</span>
+            <span class="text-sm text-gray-600">{{ .date }}</span>
+            <p class="text-gray-700 mt-2">{{ .content }}</p>
+        </li>
+        {{ end }}
+    </ul>
+    {{ else }}
+    <p class="text-gray-600">No news items available.</p>
+    {{ end }}
+{{ end }}

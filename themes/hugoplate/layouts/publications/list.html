@@ -1,0 +1,31 @@
+{{define "main"}}
+  {{ partial "page-header" . }}
+
+  {{ if .Params.publications }}
+  <ul class="space-y-4">
+      {{ range .Params.publications }}
+      <li class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-green-600">
+            {{ if .link }}
+            <a href="{{ .link }}" class="hover:underline" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+            {{ else }}
+            {{ .title }}
+            {{ end }}
+          </h3>
+          {{ if .date }}
+          <p class="text-sm text-gray-500 mb-2">Published on: {{ .date }}</p>
+          {{ end }}
+          {{ if .authors }}
+          <p class="text-gray-700">Authors: {{ .authors }}</p>
+          {{ end }}
+          {{ if .journal }}
+          <p class="text-gray-600">Journal: {{ .journal }}</p>
+          {{ end }}
+      </li>
+      {{ end }}
+  </ul>
+  {{ else }}
+  <p class="text-gray-600">No publications available.</p>
+  {{ end }}
+
+{{end}}
