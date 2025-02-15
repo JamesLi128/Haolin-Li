@@ -5,7 +5,8 @@ introduction:
   email: "hli230@jh.edu"
   affiliation: "Johns Hopkins University, AMS"
   content: |
-    I'm currently a master in Data Science at Johns Hopkins University, my ongoing capstone project supervised by professor Amitabh Basu is about the mathematics of neural networks. We are trying to prove a special case of an open conjecture that the family of function represented by shallower ReLU networks are strictly contained in that of the deeper ones, given the same input dimension. I obtained my Bachelor's degree from Renmin University of China in Mathematics and Applied Mathematics, where I was exposed to a wide range of topics. I have finished my PhD application for Fall 2025, here I want to express my gratitude to Amitabh Basu, James Schimidt, Luana Ruiz, and Mateo Diaz for their recommendations. Hopefully I will update some exciting news soon.
+    I'm currently a master in Data Science at Johns Hopkins University, my ongoing capstone project supervised by professor Amitabh Basu is about the mathematics of neural networks. We are trying to prove a special case of an open conjecture that the family of function represented by shallower ReLU networks are strictly contained in that of the deeper ones, given the same input dimension. I obtained my Bachelor's degree from Renmin University of China in Mathematics and Applied Mathematics, where I was exposed to a wide range of topics. 
+    
   interest: |
     I expect my research interest to drift overtime, currently I'm fascinated by the mathematics of AI, graph-based computations, and optimization. I'm curious about why some intuition works mathematically, and if it's possible to adapt AI in the development of mathematics. 
   image: "/images/profile.jpg"
