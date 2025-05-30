@@ -8,6 +8,15 @@ const Biocard = ({
   email = "jamesli.wks@gmail.com",
   location = "Baltimore, MD",
 }) => {
+  // Function to handle CV download
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/Haolin-Li/Haolin_Li_CV.pdf"; // Note: includes base path from vite.config.js
+    link.download = "Haolin_Li_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="max-w-7xl mx-auto bg-white rounded-2xl overflow-hidden">
       <div className="flex flex-col md:flex-row gap-8 md:gap-24">
@@ -73,10 +82,13 @@ const Biocard = ({
 
             {/* Social Links or Action Buttons */}
             <div className="flex gap-3 pt-4">
-              <button className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200 font-medium">
+              {/* <button className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200 font-medium cursor-pointer">
                 Contact Me
-              </button>
-              <button className="px-6 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition-colors duration-200 font-medium">
+              </button> */}
+              <button
+                onClick={handleDownloadCV}
+                className="px-6 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition-colors duration-200 font-medium cursor-pointer hover:cursor-pointer"
+              >
                 Download CV
               </button>
             </div>
