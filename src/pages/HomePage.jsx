@@ -22,10 +22,10 @@ const HomePage = () => {
   // Typewriter effect for the tagline
   useEffect(() => {
     const taglines = [
-      "Exploring the frontiers of computational intelligence",
-      "Decoding complex networks with AI",
-      "Building the future of machine learning",
-      "Where data meets discovery",
+      "Do something interesting",
+      "Try cool stuffs",
+      "Make an impact",
+      "Get some sleep 🥱"
     ];
 
     let currentIndex = 0;
