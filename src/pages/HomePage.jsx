@@ -188,7 +188,7 @@ const HomePage = () => {
         <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
           <span className="gradient-text">Quick Navigation</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <Link
             to="/about"
             className="group bg-white p-8 rounded-2xl shadow-lg card-hover border border-gray-100"
@@ -212,7 +212,7 @@ const HomePage = () => {
               About
             </h3>
             <p className="text-gray-600 text-sm">
-              Learn more about my research journey
+              Learn more about my research 
             </p>
           </Link>
 

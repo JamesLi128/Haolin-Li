@@ -5,8 +5,8 @@ const Biocard = ({
   title = "PhD, Computational Sciences and Informatics",
   description = "Your bio description goes here. This is a flexible component that adapts to different text lengths and provides a beautiful layout for your personal information.",
   imageUrl = "https://via.placeholder.com/200x200?text=Your+Photo",
-  email = "jamesli.wks@gmail.com",
-  location = "Baltimore, MD",
+  email = "hli54@gmu.edu",
+  location = "Fairfax, VA",
 }) => {
   // Function to handle CV download
   const handleDownloadCV = () => {
