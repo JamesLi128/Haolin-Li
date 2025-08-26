@@ -15,8 +15,8 @@ export const projects = [
     ],
     github: "https://github.com/username/graph-sampling-gnn",
     paper: "https://arxiv.org/pdf/2410.16593",
-    image: "/project-images/graph-sampling.jpg", // Specific image for this project
-    defaultImage: "/project-images/default-project.jpg", // Fallback default image
+    // image: "/Haolin-Li/project-images/graph-sampling.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
   },
   {
     id: 2,
@@ -34,8 +34,8 @@ export const projects = [
     ],
     github: "https://github.com/username/cancer-detection-cnn",
     paper: "https://ieeexplore.ieee.org/abstract/document/9927690",
-    image: "/project-images/cancer-detection.jpg", // Specific image for this project
-    defaultImage: "/project-images/default-project.jpg", // Fallback default image
+    // image: "/Haolin-Li/project-images/cancer-detection.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
   },
   {
     id: 3,
@@ -53,8 +53,8 @@ export const projects = [
     ],
     github: "https://github.com/username/personal-website",
     demo: "https://jamesli128.github.io/Haolin-Li/",
-    image: "/project-images/personal-website.jpg", // Specific image for this project
-    defaultImage: "/project-images/default-project.jpg", // Fallback default image
+    // image: "/Haolin-Li/project-images/personal-website.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ export const projects = [
       "Real-world case studies",
     ],
     github: "https://github.com/username/ml-course-materials",
-    image: "/project-images/ml-course.jpg", // Specific image for this project
-    defaultImage: "/project-images/default-project.jpg", // Fallback default image
+    // image: "/Haolin-Li/project-images/ml-course.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
   },
 ];
