@@ -1,5 +1,6 @@
 export const blogPost = {
-  id: 1,
+  slug: "understanding-graph-neural-networks",
+  published: true,
   title: "Understanding Graph Neural Networks: A Comprehensive Guide",
   excerpt:
     "An in-depth exploration of Graph Neural Networks, their applications, and the challenges in scaling them to large graphs. This post covers the fundamentals and recent advances in the field.",

@@ -3,12 +3,12 @@ import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-import { blogPosts } from "../assets/blogs";
+import { getBlogPostBySlug } from "../assets/blogs";
 import "katex/dist/katex.min.css";
 
 const BlogPostPage = () => {
-  const { id } = useParams();
-  const post = blogPosts.find((p) => p.id === parseInt(id));
+  const { slug } = useParams();
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     return (

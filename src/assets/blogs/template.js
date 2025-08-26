@@ -2,7 +2,8 @@
 // Copy this file and rename it to blog4.js, blog5.js, etc.
 
 export const blogPost = {
-  id: 4, // IMPORTANT: Increment this ID for each new blog post
+  slug: "your-blog-post-slug", // IMPORTANT: Use a unique slug for each blog post
+  published: false, // Set to true when ready to publish
   title: "Your Blog Post Title",
   excerpt:
     "A brief description of your blog post that appears in the preview. Keep this concise but informative.",
@@ -66,7 +67,7 @@ Wrap up your blog post with a conclusion or summary.
 };
 
 // After creating this file:
-// 1. Rename it to blog4.js, blog5.js, etc.
+// 1. Rename it to blog4.js, blog5.js, etc. (or any name starting with 'blog')
 // 2. Update the content with your actual blog post
-// 3. Add the import to src/assets/blogs/index.js
-// 4. Update the blogPosts array in index.js
+// 3. The blog will be automatically detected and sorted by date
+// Note: Blog template files are automatically filtered out by the system

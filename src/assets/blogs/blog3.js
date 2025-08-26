@@ -1,5 +1,6 @@
 export const blogPost = {
-  id: 3,
+  slug: "building-academic-personal-website",
+  published: true,
   title: "Building an Academic Personal Website: A Technical Guide",
   excerpt:
     "A practical guide to creating a modern academic personal website using React and modern web technologies. Covers design principles, technical implementation, and content management.",

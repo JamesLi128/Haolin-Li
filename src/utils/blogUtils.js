@@ -7,11 +7,18 @@
  */
 export const generateBlogTemplate = (options = {}) => {
   const now = new Date();
-  const nextId = Math.max(...blogPosts.map((p) => p.id)) + 1;
+  const title = options.title || "New Blog Post Title";
+  const slug =
+    options.slug ||
+    title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
 
   return {
-    id: nextId,
-    title: options.title || "New Blog Post Title",
+    slug: slug,
+    published: false,
+    title: title,
     excerpt: options.excerpt || "A brief description of this blog post...",
     content:
       options.content ||
@@ -100,7 +107,8 @@ export const hasLatexContent = (content) => {
 export const blogPostTemplate = `
 // Add this to src/assets/blog.js
 {
-  id: [NEXT_ID],
+  slug: "your-blog-post-slug",
+  published: false,
   title: "Your Blog Post Title",
   excerpt: "A brief description of your blog post that will appear in the blog listing.",
   content: \`
@@ -141,4 +149,4 @@ Wrap up your blog post here.
 `;
 
 // Import blogPosts for the template generator
-import { blogPosts } from "../assets/blog.js";
+import { blogPosts } from "../assets/blogs/index.js";

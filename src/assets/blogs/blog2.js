@@ -1,5 +1,6 @@
 export const blogPost = {
-  id: 2,
+  slug: "future-of-medical-ai",
+  published: true,
   title: "The Future of Medical AI: Lessons from Cancer Detection",
   excerpt:
     "Reflections on implementing AI systems for medical diagnosis, focusing on the challenges, ethical considerations, and future directions in healthcare AI.",

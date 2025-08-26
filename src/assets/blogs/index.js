@@ -1,16 +1,15 @@
-import { blogPost as blog1 } from "./blog1.js";
-import { blogPost as blog2 } from "./blog2.js";
-import { blogPost as blog3 } from "./blog3.js";
+// Automatically import all blog files
+const blogModules = import.meta.glob("./blog*.js", { eager: true });
 
-// Export all blog posts as an array
-export const blogPosts = [blog1, blog2, blog3];
+// Extract blog posts and sort by date (newest first)
+export const blogPosts = Object.values(blogModules)
+  .map((module) => module.blogPost)
+  .filter((post) => post && post.published === true) // Filter out unpublished and invalid posts
+  .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date, newest first
 
-// Export individual blog posts for easy access
-export { blog1, blog2, blog3 };
-
-// Helper function to get a blog post by ID
-export const getBlogPostById = (id) => {
-  return blogPosts.find((post) => post.id === id);
+// Helper function to get a blog post by slug
+export const getBlogPostBySlug = (slug) => {
+  return blogPosts.find((post) => post.slug === slug);
 };
 
 // Helper function to get blog posts by category
@@ -21,4 +20,14 @@ export const getBlogPostsByCategory = (category) => {
 // Helper function to get featured blog posts
 export const getFeaturedBlogPosts = () => {
   return blogPosts.filter((post) => post.featured);
+};
+
+// Helper function to get latest blog posts (first n posts)
+export const getLatestBlogPosts = (count = 3) => {
+  return blogPosts.slice(0, count);
+};
+
+// Helper function to get blog posts by tag
+export const getBlogPostsByTag = (tag) => {
+  return blogPosts.filter((post) => post.tags && post.tags.includes(tag));
 };

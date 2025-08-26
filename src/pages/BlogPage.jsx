@@ -156,8 +156,8 @@ const BlogPage = () => {
               .filter((post) => post.featured)
               .map((post) => (
                 <a
-                  key={post.id}
-                  href={`#/blog/${post.id}`}
+                  key={post.slug}
+                  href={`#/blog/${post.slug}`}
                   className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden card-hover block clickable-card"
                 >
                   {/* Blog Image */}
@@ -225,8 +225,8 @@ const BlogPage = () => {
           {filteredPosts.length > 0 ? (
             filteredPosts.map((post) => (
               <a
-                key={post.id}
-                href={`#/blog/${post.id}`}
+                key={post.slug}
+                href={`#/blog/${post.slug}`}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden card-hover block clickable-card"
               >
                 {/* Blog Image */}
