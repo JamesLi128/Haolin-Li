@@ -68,6 +68,6 @@ Planned improvements include:
   readTime: "5 min read",
   featured: false,
   latexContent: false,
-  image: "/blog-images/web-development.jpg", // Specific image for this blog
-  defaultImage: "/blog-images/default-blog.jpg", // Fallback default image
+  image: "/Haolin-Li/blog-images/web-development.jpg", // Specific image for this blog
+  defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
 };

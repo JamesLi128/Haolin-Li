@@ -49,6 +49,6 @@ This work has significant implications for applying GNNs to real-world problems 
   readTime: "8 min read",
   featured: true,
   latexContent: true,
-  image: "/blog-images/graph-neural-networks.jpg", // Specific image for this blog
-  defaultImage: "/blog-images/default-blog.jpg", // Fallback default image
+  // image: "/Haolin-Li/blog-images/graph-neural-networks.jpg", // Specific image for this blog
+  defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
 };

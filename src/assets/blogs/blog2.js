@@ -49,6 +49,6 @@ Our system achieved 85% accuracy in cancer detection, but there's still much wor
   readTime: "6 min read",
   featured: false,
   latexContent: true,
-  image: "/blog-images/medical-ai.jpg", // Specific image for this blog
-  defaultImage: "/blog-images/default-blog.jpg", // Fallback default image
+  image: "/Haolin-Li/blog-images/medical-ai.jpg", // Specific image for this blog
+  defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
 };

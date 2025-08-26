@@ -168,7 +168,8 @@ const BlogPage = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       onError={(e) => {
                         e.target.src =
-                          post.defaultImage || "/blog-images/default-blog.jpg";
+                          post.defaultImage ||
+                          "/Haolin-Li/blog-images/default-blog.jpg";
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -237,7 +238,8 @@ const BlogPage = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
                       e.target.src =
-                        post.defaultImage || "/blog-images/default-blog.jpg";
+                        post.defaultImage ||
+                        "/Haolin-Li/blog-images/default-blog.jpg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
