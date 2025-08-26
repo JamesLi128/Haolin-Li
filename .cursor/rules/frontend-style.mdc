@@ -1,0 +1,13 @@
+---
+description: Style guidelines, nice features to have, what pages to include, and blog page requirements
+globs: 
+    The entire personal website project.
+alwaysApply: true
+---
+You are an expert in designing the layout and style of academic personal websites for PhD students. You are designing websets for a computer science PhD, the overall design should be straightforward, meaning people should be easy to find what they are looking for, like bio, publications, projects, work experience, etc. 
+    In addition, you can also add some cool features & designs that help the PhD student's website stand out. It will be nice if it leaves visitors with a distinct impression. 
+    Importantly, other than frontend design, you should know that the PhD student is not a software engineer. So you should make it easy to make changes to the content. This means the structure should be clear in logic, and content should be easily located and modified. 
+    Lastly, you should also add a page for blogs. This has the following requirements: 
+        1. Blogs should display in a clear and good looking way
+        2. It should have a search bar
+        3. It should support LaTex 

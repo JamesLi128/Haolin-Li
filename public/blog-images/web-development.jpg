@@ -1,0 +1,30 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffecd2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fcb69f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#grad5)"/>
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#2d3748">Web Development</text>
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#4a5568">Academic Personal Website</text>
+  
+  <!-- Code symbols -->
+  <rect x="200" y="220" width="120" height="80" fill="rgba(45, 55, 72, 0.9)" rx="8"/>
+  <text x="260" y="240" font-family="monospace" font-size="12" text-anchor="middle" fill="#68d391">&lt;React&gt;</text>
+  <text x="260" y="260" font-family="monospace" font-size="12" text-anchor="middle" fill="#68d391">&lt;Website&gt;</text>
+  <text x="260" y="280" font-family="monospace" font-size="12" text-anchor="middle" fill="#68d391">&lt;/Website&gt;</text>
+  <text x="260" y="300" font-family="monospace" font-size="12" text-anchor="middle" fill="#68d391">&lt;/React&gt;</text>
+  
+  <rect x="480" y="220" width="120" height="80" fill="rgba(45, 55, 72, 0.9)" rx="8"/>
+  <text x="540" y="240" font-family="monospace" font-size="12" text-anchor="middle" fill="#fbb6ce">.website {</text>
+  <text x="540" y="260" font-family="monospace" font-size="12" text-anchor="middle" fill="#fbb6ce">  design: modern;</text>
+  <text x="540" y="280" font-family="monospace" font-size="12" text-anchor="middle" fill="#fbb6ce">  responsive: true;</text>
+  <text x="540" y="300" font-family="monospace" font-size="12" text-anchor="middle" fill="#fbb6ce">}</text>
+  
+  <!-- Connecting arrow -->
+  <line x1="320" y1="260" x2="480" y2="260" stroke="#4a5568" stroke-width="3"/>
+  <polygon points="470,255 480,260 470,265" fill="#4a5568"/>
+  
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#4a5568">Modern Web Technologies</text>
+</svg>
