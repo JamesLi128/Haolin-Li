@@ -411,7 +411,7 @@ const HomePage = () => {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute "></div>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-2">

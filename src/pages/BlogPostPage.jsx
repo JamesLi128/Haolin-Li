@@ -71,7 +71,7 @@ const BlogPostPage = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4 leading-tight text-center">
           {post.title}
         </h1>
 
@@ -147,7 +147,7 @@ const BlogPostPage = () => {
 
         {/* Excerpt */}
         <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-l-4 border-indigo-500">
-          <p className="text-lg text-gray-700 italic leading-relaxed max-w-none">
+          <p className="text-lg text-gray-700 italic leading-relaxed max-w-none text-left">
             {post.excerpt}
           </p>
         </div>
@@ -155,7 +155,7 @@ const BlogPostPage = () => {
 
       {/* Article Content */}
       <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-        <div className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-p:text-base">
+        <div className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-p:text-base blog-content">
           <ReactMarkdown
             remarkPlugins={[remarkMath]}
             rehypePlugins={[rehypeKatex]}

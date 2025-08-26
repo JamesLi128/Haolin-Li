@@ -5,6 +5,9 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // Set initial scroll state
+    setIsScrolled(window.scrollY > 50);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -37,7 +40,7 @@ const Navbar = () => {
               to="/"
               className={`text-2xl font-bold transition-colors duration-300 ${
                 isScrolled ? "text-gray-800" : "text-white"
-              } hover:scale-105 transform whitespace-nowrap`}
+              } whitespace-nowrap inline-block px-2 py-1 rounded-lg hover:scale-105 transform`}
             >
               <span className="gradient-text">Haolin Li</span>
             </NavLink>

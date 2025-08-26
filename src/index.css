@@ -1,14 +1,36 @@
 @import "tailwindcss";
 
-/* Custom CSS for enhanced styling */
+/* Prevent browser dimming and ensure consistent appearance */
 html {
   scroll-behavior: smooth;
+  /* Prevent browser auto-dimming */
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background-color: #f9fafb;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
+  /* Prevent any browser-level dimming */
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Prevent page dimming on blur/focus */
+body:focus-within,
+body:hover,
+html:focus-within,
+html:hover {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Disable automatic brightness/contrast adjustments */
+* {
+  -webkit-filter: none !important;
+  filter: none !important;
 }
 
 /* Custom button styles */
@@ -228,4 +250,81 @@ body {
 .backdrop-blur {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+/* Blog content specific styles */
+.blog-content {
+  text-align: left;
+}
+
+.blog-content h1 {
+  text-align: center;
+}
+
+.blog-content h2 {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.blog-content h3 {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.blog-content h4 {
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+}
+
+.blog-content p {
+  text-align: left;
+  text-indent: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+/* First paragraph after headers should not be indented */
+.blog-content h1 + p,
+.blog-content h2 + p,
+.blog-content h3 + p,
+.blog-content h4 + p {
+  text-indent: 0;
+}
+
+.blog-content ul,
+.blog-content ol {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.blog-content blockquote {
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+/* KaTeX math expressions */
+.blog-content .katex {
+  font-size: 1.1em;
+}
+
+.blog-content .katex-display {
+  text-align: center;
+  margin: 1.5rem 0;
+  text-indent: 0;
+}
+
+.blog-content .katex-display .katex {
+  display: inline-block;
+  text-align: center;
+}
+
+.blog-content p:has(.katex-display) {
+  text-indent: 0;
+  text-align: center;
 }

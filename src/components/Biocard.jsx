@@ -24,7 +24,7 @@ const Biocard = ({
         {/* Left side - Profile Image */}
         <div className="md:w-2/5 p-12 flex justify-center items-center bg-gradient-to-br from-indigo-50 to-purple-50">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full blur-xl opacity-20"></div>
             <img
               src={imageUrl}
               alt={name}
@@ -94,7 +94,10 @@ const Biocard = ({
 
             {/* Action Buttons */}
             <div className="flex gap-4 pt-4">
-              <button onClick={handleDownloadCV} className="btn-primary">
+              <button
+                onClick={handleDownloadCV}
+                className="btn-primary cursor-pointer"
+              >
                 <svg
                   className="w-5 h-5 mr-2"
                   fill="none"
