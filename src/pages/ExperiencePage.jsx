@@ -219,19 +219,25 @@ const ExperiencePage = () => {
                     <div className="absolute left-2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-white shadow-sm"></div>
 
                     {/* Content */}
-                    <div className="ml-8">
-                      <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-lg font-semibold text-gray-800">
-                          {item.title || item.degree}
-                        </h3>
-                        <span className="text-sm text-gray-500">
-                          {item.period}
-                        </span>
+                    <div className="ml-8 flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <div className="flex-1">
+                          <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                            {item.title || item.degree}
+                          </h3>
+                          <p className="text-gray-600 mb-1">
+                            {item.organization || item.institution}
+                          </p>
+                          <p className="text-gray-500 text-sm">
+                            {item.location}
+                          </p>
+                        </div>
+                        <div className="mt-2 md:mt-0 md:ml-4">
+                          <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                            {item.period}
+                          </span>
+                        </div>
                       </div>
-                      <p className="text-gray-600">
-                        {item.organization || item.institution}
-                      </p>
-                      <p className="text-gray-500 text-sm">{item.location}</p>
                     </div>
                   </div>
                 ))}

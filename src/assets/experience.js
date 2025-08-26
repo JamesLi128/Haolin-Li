@@ -4,68 +4,68 @@ export const experience = {
       title: "Research Assistant",
       organization: "George Mason University",
       location: "Fairfax, VA",
-      period: "2023 - Present",
+      period: "Aug. 2025 - Present",
       description:
-        "Conducting research in graph neural networks and machine learning applications.",
+        "Conducting research on Federated Continual Learning",
       technologies: [
-        "Python",
         "PyTorch",
-        "Graph Neural Networks",
         "Machine Learning",
+        "Federated Learning",
+        "Continual Learning",
       ],
     },
     {
-      title: "Graduate Teaching Assistant",
-      organization: "George Mason University",
-      location: "Fairfax, VA",
-      period: "2022 - 2023",
+      title: "Teaching Assistant",
+      organization: "Johns Hopkins University",
+      location: "Baltimore, MD",
+      period: "Feb 2024 - May 2025",
       description:
-        "Assisted in teaching undergraduate computer science courses.",
-      technologies: ["Java", "Data Structures", "Algorithms"],
+        "Courses include: Introduction to Data Science, Machine Learning I/II (PhD Level)",
+      technologies: ["Optimization", "Python", "SVMs", "Kernel Methods", "Dimension Reduction", "Generative Models", "Communnication"],
     },
   ],
 
   education: [
     {
       degree: "PhD in Computational Sciences and Informatics",
-      institution: "George Mason University",
+      institution: "George Mason University (GMU)",
       location: "Fairfax, VA",
-      period: "2022 - Present",
-      gpa: "3.9/4.0",
-      thesis:
-        "Graph Sampling for Scalable and Expressive Graph Neural Networks",
+      period: "Aug 2025 - Present",
+      gpa: " - /4.0",
+      // thesis:
+      //   "Graph Sampling for Scalable and Expressive Graph Neural Networks",
     },
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Previous University",
-      location: "City, State",
-      period: "2020 - 2022",
-      gpa: "3.8/4.0",
+      degree: "MSE in Data Science",
+      institution: "Johns Hopkins University (JHU)",
+      location: "Baltimore, MD",
+      period: "Aug 2023 - May 2025",
+      gpa: "3.97/4.0",
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "Previous University",
-      location: "City, State",
-      period: "2016 - 2020",
-      gpa: "3.7/4.0",
+      degree: "BSc in Mathematics & Applied Mathematics",
+      institution: "Renmin University of China (RUC)",
+      location: "Beijing, China",
+      period: "Sep 2019 - Jun 2023",
+      gpa: "3.68/4.0",
     },
   ],
 
   awards: [
-    {
-      title: "Outstanding Graduate Student Award",
-      organization: "George Mason University",
-      year: "2024",
-      description:
-        "Recognized for exceptional research contributions and academic performance.",
-    },
-    {
-      title: "Best Paper Award",
-      organization: "EUSIPCO 2025",
-      year: "2025",
-      description:
-        "Awarded for the paper on Graph Sampling for Scalable and Expressive Graph Neural Networks.",
-    },
+    // {
+    //   title: "Outstanding Graduate Student Award",
+    //   organization: "George Mason University",
+    //   year: "2024",
+    //   description:
+    //     "Recognized for exceptional research contributions and academic performance.",
+    // },
+    // {
+    //   title: "Best Paper Award",
+    //   organization: "EUSIPCO 2025",
+    //   year: "2025",
+    //   description:
+    //     "Awarded for the paper on Graph Sampling for Scalable and Expressive Graph Neural Networks.",
+    // },
   ],
 
   skills: {
@@ -94,7 +94,7 @@ export const experience = {
       "Statistical Modeling",
     ],
     languages: [
-      { language: "English", proficiency: "Native" },
+      { language: "English", proficiency: "Academic & Oral Proficient" },
       { language: "Chinese", proficiency: "Native" },
     ],
   },
