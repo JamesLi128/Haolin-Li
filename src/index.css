@@ -287,14 +287,6 @@ html:hover {
   margin-right: 2rem;
 }
 
-/* First paragraph after headers should not be indented */
-.blog-content h1 + p,
-.blog-content h2 + p,
-.blog-content h3 + p,
-.blog-content h4 + p {
-  text-indent: 0;
-}
-
 .blog-content ul,
 .blog-content ol {
   text-align: left;

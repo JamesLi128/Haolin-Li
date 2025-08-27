@@ -1,54 +1,51 @@
 export const blogPost = {
-  slug: "understanding-graph-neural-networks",
+  slug: "Build A Personal Website",
   published: true,
-  title: "Understanding Graph Neural Networks: A Comprehensive Guide",
+  title: "Web Development with AI",
   excerpt:
-    "An in-depth exploration of Graph Neural Networks, their applications, and the challenges in scaling them to large graphs. This post covers the fundamentals and recent advances in the field.",
+    "Briefly talks about how this personal website was built with AI. Also discusses the limitations of AI and how we should see them and use them.",
   content: `
-# Understanding Graph Neural Networks: A Comprehensive Guide
+# AI is cool, but not enough
 
-Graph Neural Networks (GNNs) have emerged as a powerful tool for processing graph-structured data. In this post, I'll walk through the fundamental concepts and recent advances in this exciting field.
+A popular commercial for an AI software coding tool says, make whatever you want by just thinking about it. I tried, AI is nice, but just thinking about it is not enough at this time. 
 
-## What are Graph Neural Networks?
+## AI is super cool
 
-Graph Neural Networks are a class of neural networks designed to work with graph-structured data. Unlike traditional neural networks that process fixed-size vectors, GNNs can handle variable-sized graphs with complex relationships.
+I used **cursor** to help me build the overall framework of my personal website, including the cool homepage and very importantly, the logic. After my cursor free trail was used up, I switched to **copilot** because it has an education plan. At this stage, the work is more about finetuning the style and adjusting the font & arrangement.
 
-## Mathematical Foundation
+With a fair estimate, I give 80% of the credit to AI for this personal website, which is super cool. But the point people usually ignore is, this project can't finish without the rest 20% of human labor. 
 
-The basic GNN update rule can be expressed as:
+## AI alone is not enough: an example
 
-$$h_v^{(l+1)} = \\sigma(W^{(l)} \\cdot \\text{AGGREGATE}^{(l)}({h_u^{(l)} : u \\in \\mathcal{N}(v)}))$$
+If you examine the cool homepage of this website, you will notice something as you move your mouse around: the background **dims a little** when you put your mouse close to the center(my name). 
 
-Where:
-- $h_v^{(l)}$ is the hidden state of node $v$ at layer $l$
-- $\\mathcal{N}(v)$ represents the neighborhood of node $v$
-- $\\text{AGGREGATE}$ is a permutation-invariant function
-- $\\sigma$ is a non-linear activation function
+This effect is not hard for a relatively experienced web developer, **but it turns out to be very hard for AI**. To implement this feature, I gave AI several chances, but even the best result wasn't satisfying -- and a little annoying. After several edits, my homepage finally has the dimming feature, but it blinks....
 
-## Challenges in Scaling GNNs
+*The background can't stop blinking between light and dimmed unless I put my mouse at the center of my screen.*
 
-One of the main challenges in applying GNNs to large graphs is computational complexity. Traditional GNNs require processing the entire graph, which becomes infeasible for graphs with millions of nodes.
+Yet still, I thought this was a good starting point. After all, the dimming effect was there. It just needed to solve the blinking problem! And... I was wrong. AI attempted more than 10 agent sessions and all failed to identify the bug.
 
-### Our Solution: Graph Sampling
+For context, I use react + tailwind for my personal website. Therefore, the styling of elements is mostly achieved by adding tailwind's pre-defined CSS in the *ClassName* field. In addition, the only web dev experience was the 3 classes I took on Coursera. However, I was able to identify that the problem was a misuse of a pre-defined CSS. The problem was solved by simply removing those two CSS from the *ClassName* field. 
 
-In our recent work, we proposed an efficient graph sampling strategy that addresses this scalability issue while maintaining model performance.
+Simple, but AI couldn't do it.
 
-## Results and Impact
+## So What?
 
-Our approach achieved:
-- **40% improvement** in sampling efficiency
-- **Maintained accuracy** on large-scale graphs
-- **Reduced memory usage** by 60%
+Some people brag about what AI can do because they make money out of it, and a considerable proportion of the population buys that because they don't know how it works. The reality is, it's no different from the advent of the steam engine or the weaving machine. Most people used those machines but never knew how they worked; stakeholders use edge cases to brag about the performance of their products; workers in that industry were scared that they might be replaced.....
 
-This work has significant implications for applying GNNs to real-world problems where graph size is a limiting factor.
+Now we know that neither the steam engine nor the weaving machine was perfect. They glitch, they fall apart, and they need professionals to maintain and correct their behavior. It is the same with AI.
+
+If coding is digging a hole in the ground, after the invention of the shovel, just learn how to use it. Stop trying to practice digging with your hand. But sometimes you still need to use your hands to pull a big rock from the ground that stands in your shovel's way. 
+
+So don't be scared, but be prepared.
   `,
   author: "Haolin Li",
-  date: "2024-12-15",
-  category: "Machine Learning",
-  tags: ["Graph Neural Networks", "Deep Learning", "Research"],
+  date: "2025-08-26",
+  category: "Others",
+  tags: ["AI", "WebDev", "Thinking"],
   readTime: "8 min read",
   featured: true,
-  latexContent: true,
+  latexContent: false,
   // image: "/Haolin-Li/blog-images/graph-neural-networks.jpg", // Specific image for this blog
   defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
 };
