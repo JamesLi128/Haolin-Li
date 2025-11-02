@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Research project focused on developing efficient graph sampling techniques for large-scale graph neural networks. This work addresses the scalability challenges in processing massive graphs while maintaining model performance.",
     category: "Research",
-    status: "Active",
+    status: "Published",
     period: "2023 - Present",
     technologies: ["Python", "PyTorch", "Graph Neural Networks", "NetworkX"],
     outcomes: [
@@ -15,8 +15,8 @@ export const projects = [
     ],
     github: "https://github.com/username/graph-sampling-gnn",
     paper: "https://arxiv.org/pdf/2410.16593",
-    // image: "/Haolin-Li/project-images/graph-sampling.jpg", // Specific image for this project
-    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
+    image: "/Haolin-Li/blog-images/default-blog.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const projects = [
     description:
       "Implementation of pre-trained convolutional neural networks for medical image analysis and cancer detection. This project explores the application of deep learning in healthcare diagnostics.",
     category: "Research",
-    status: "Completed",
+    status: "Published",
     period: "2021 - 2022",
     technologies: ["Python", "TensorFlow", "OpenCV", "Medical Imaging"],
     outcomes: [
@@ -34,8 +34,8 @@ export const projects = [
     ],
     github: "https://github.com/username/cancer-detection-cnn",
     paper: "https://ieeexplore.ieee.org/abstract/document/9927690",
-    // image: "/Haolin-Li/project-images/cancer-detection.jpg", // Specific image for this project
-    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
+    image: "/Haolin-Li/blog-images/default-blog.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ export const projects = [
     ],
     github: "https://github.com/username/personal-website",
     demo: "https://jamesli128.github.io/Haolin-Li/",
-    // image: "/Haolin-Li/project-images/personal-website.jpg", // Specific image for this project
-    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
+    image: "/Haolin-Li/blog-images/default-blog.jpg", // Specific image for this project
+    defaultImage: "/Haolin-Li/blog-images/default-blog.jpg", // Fallback default image
   },
 ];
