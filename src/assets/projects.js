@@ -56,22 +56,4 @@ export const projects = [
     // image: "/Haolin-Li/project-images/personal-website.jpg", // Specific image for this project
     defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
   },
-  {
-    id: 4,
-    title: "Machine Learning Course Materials",
-    description:
-      "Comprehensive course materials and tutorials for machine learning education. Includes Jupyter notebooks, datasets, and interactive examples.",
-    category: "Education",
-    status: "Active",
-    period: "2023 - Present",
-    technologies: ["Python", "Jupyter", "Scikit-learn", "Pandas"],
-    outcomes: [
-      "Used by 100+ students",
-      "Interactive learning modules",
-      "Real-world case studies",
-    ],
-    github: "https://github.com/username/ml-course-materials",
-    // image: "/Haolin-Li/project-images/ml-course.jpg", // Specific image for this project
-    defaultImage: "/Haolin-Li/project-images/default-project.jpg", // Fallback default image
-  },
 ];

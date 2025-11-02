@@ -64,9 +64,9 @@ const ContactPage = () => {
                 <h3 className="text-lg font-semibold text-gray-800">Email</h3>
               </div>
               <p className="text-gray-600 mb-2">
-                Primary: jamesli.wks@gmail.com
+                Primary: haolin.li.work@gmail.com
               </p>
-              <p className="text-gray-600">Academic: haolin.li@example.edu</p>
+              <p className="text-gray-600">Academic: hli54@gmu.edu</p>
             </div>
 
             {/* Location */}
@@ -97,12 +97,12 @@ const ContactPage = () => {
                   Location
                 </h3>
               </div>
-              <p className="text-gray-600 mb-2">Baltimore, MD</p>
+              <p className="text-gray-600 mb-2">Fairfax, VA</p>
               <p className="text-gray-600">George Mason University</p>
             </div>
 
             {/* Office Hours */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
               <div className="flex items-center mb-3">
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                   <svg
@@ -127,10 +127,10 @@ const ContactPage = () => {
               <p className="text-gray-600">
                 Please email to schedule a meeting
               </p>
-            </div>
+            </div> */}
 
             {/* Social Media */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
               <div className="flex items-center mb-3">
                 <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
                   <svg
@@ -197,8 +197,8 @@ const ContactPage = () => {
                   </svg>
                   Twitter
                 </a>
-              </div>
-            </div>
+              </div> 
+            </div> */}
           </div>
         </div>
 
