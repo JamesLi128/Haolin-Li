@@ -3,7 +3,7 @@ import React from "react";
 const Biocard = ({
   name = "Haolin Li",
   title = "PhD, Computational Sciences and Informatics",
-  description = "Your bio description goes here. This is a flexible component that adapts to different text lengths and provides a beautiful layout for your personal information.",
+  description = "I am a PhD student at George Mason University specializing in distributed machine learning and robust optimization. My current research interest spans scalable and adaptive Federated Continual Learning (FCL) and Distribution Robust Optimization (DRO). I am honored to be advised by Prof. Hoda Bidkhori.",
   imageUrl = "https://via.placeholder.com/200x200?text=Your+Photo",
   email = "hli54@gmu.edu",
   location = "Fairfax, VA",
