@@ -78,7 +78,6 @@ export const experience = {
       "Deep Learning",
       "Data Analysis",
       "Statistics",
-      "Java",
       "C++",
       "JavaScript",
       "React",

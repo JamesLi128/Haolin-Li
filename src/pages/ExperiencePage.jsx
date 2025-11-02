@@ -112,7 +112,7 @@ const ExperiencePage = () => {
       </section>
 
       {/* Awards & Honors */}
-      <section className="mb-12">
+      {/* <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           Awards & Honors
         </h2>
@@ -137,7 +137,7 @@ const ExperiencePage = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Skills Overview */}
       <section className="mb-12">

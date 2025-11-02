@@ -32,8 +32,7 @@ const PublicationsPage = () => {
           <span className="gradient-text">Publications</span>
         </h1>
         <p className="text-xl text-gray-600">
-          My research contributions in machine learning and graph neural
-          networks
+          My research contributions in Machine Learning and Optimization.
         </p>
       </div>
 

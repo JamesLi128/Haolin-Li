@@ -22,17 +22,11 @@ const AboutPage = () => {
         </h2>
         <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            My research focuses on developing scalable and efficient machine
-            learning algorithms, particularly in the areas of graph neural
-            networks and their applications. I'm interested in addressing the
-            computational challenges that arise when applying these techniques
-            to large-scale real-world problems.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Currently, I'm working on graph sampling strategies that can improve
-            the efficiency of graph neural networks while maintaining their
-            expressive power. This work has applications in social network
-            analysis, recommendation systems, and biological network modeling.
+            My research focuses on developing scalable and robust machine
+            learning algorithms. I am particularly interested in Federated Continual Learning (FCL) 
+            algorithm design and the application of Distribution Robust Optimization (DRO). 
+            I am most excited to work with both theoretical and applied aspects of these fields to create
+            innovative solutions for real-world problems.
           </p>
         </div>
       </section>
@@ -133,10 +127,8 @@ const AboutPage = () => {
         </h2>
         <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
           <p className="text-lg text-gray-700 leading-relaxed">
-            Outside of research, I enjoy reading science fiction novels, hiking,
-            and exploring new technologies. I'm also passionate about
-            open-source software and contributing to the academic community
-            through teaching and mentoring.
+            Outside of research, I enjoy hiking, exploring new technologies, and reading
+            light-weight philosophy (currently "A Little History of Philosophy" by Nigel Warburton).
           </p>
         </div>
       </section>
